@@ -1,0 +1,15 @@
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiBox-root{
+    width: 30%;
+    text-align: center;
+
+    .MuiInputBase-root{
+        margin-bottom: 20px;
+    }
+}
