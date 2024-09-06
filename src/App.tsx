@@ -7,13 +7,13 @@ import Home from './pages/Home/Home';
 const App: React.FC = () => {
 
     return (
-        <Router>
+        
             <Routes>
                 <Route path="/home" element={<PrivateRoute element={<Home />} />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/" element={<Navigate to="/home" />} />
             </Routes>
-        </Router>
+        
     );
 };
 
