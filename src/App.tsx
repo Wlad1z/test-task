@@ -5,13 +5,13 @@ import PrivateRoute from './components/PrivateRoutes/PrivateRoutes';
 import Home from './pages/Home/Home';
 
 const App: React.FC = () => {
-    const token: string | null = localStorage.getItem('token');
+
     return (
         <Router>
             <Routes>
                 <Route path="/home" element={<PrivateRoute element={<Home />} />} />
                 <Route path="/login" element={<LoginPage />} />
-                <Route path="/" element={<Navigate to="/login" />} />
+                <Route path="/" element={<Navigate to="/home" />} />
             </Routes>
         </Router>
     );
