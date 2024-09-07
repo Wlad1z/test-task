@@ -11,9 +11,9 @@ const root = ReactDOM.createRoot(
 root.render(
 
   <React.StrictMode>
-    <BrowserRouter basename="/test-task">
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 
 );
